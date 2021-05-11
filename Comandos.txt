@@ -1,0 +1,51 @@
+* Para decir quienes somos 
+git config --global user.name "nombre"
+git config --global user.email "nombre"
+
+* ver archivos y carpetas 
+ls -al 
+
+* Crea repositorio para trabajar
+git init
+
+git status
+git add .
+git commit -m "Primer commmit"
+git checkout -- . Reconstruye hasta el ultimo commit
+
+git log
+
+git add *.png
+git add . -A excluye un archivo
+git reser *.xml
+
+git log --oneline
+git log --oneline --decorate --all --graph
+
+git status -s modificados 
+git status -s -b
+
+* Alias
+git config --global alias.lg ""
+
+git config --global -e
+:q sale del editor
+git config --global -l
+
+git diff cambios de archivos
+git diff --staget
+
+git reset HEAD README.md borra del statemen
+git checkout --README-md regresa al anterior 
+
+git commit -am "Readme acutl" guarda y ahce commit
+
+git commit --amend -m "Actualizamos el readmi" actualiza
+
+git reset --soft HEAD^   con el REVERTIR HASTA UN PUNTO HISTORIA 
+git reset --mixed d232sa donde queremos movernos 
+git reser --hard 643d para movernos donde queremos y borrar lo demas
+git reflog ver todo lo que hemos hecho
+
+git mv destruir.txt salvar.txt cambia nombre
+git rm salvar.txt elimina archivo 
